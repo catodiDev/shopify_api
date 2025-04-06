@@ -19,7 +19,7 @@ export default function Home() {
     };
 
     fetchLogs();
-    const interval = setInterval(fetchLogs, 5000); // Actualizar cada 5 segundos
+    const interval = setInterval(fetchLogs, 5000);
 
     return () => clearInterval(interval);
   }, []);
